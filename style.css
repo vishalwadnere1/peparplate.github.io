@@ -395,6 +395,10 @@ ol {
         row-gap: 1rem;
         margin: 2rem;
     }
-
-
 }
+ @media screen and (max-width: 1076px) {
+        .logo {
+            margin-left: 1rem;
+        }
+
+    }
