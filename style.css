@@ -1,0 +1,400 @@
+/* ------- google fonts------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1068px;
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    padding: 4rem 0 3rem;
+
+}
+
+
+/* -----header -------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: auto;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-right: 2rem;
+}
+
+.left,
+a {
+    color: var(--text-color);
+}
+
+.left,
+a:hover {
+    color: var(--main-color);
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#cart-icon:hover {
+    color: var(--main-color);
+}
+
+
+/* cart  */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: ease-in-out .4s;
+
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: .5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    font-size: 1rem;
+    border: 2px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+}
+
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--text-color);
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.shop {
+    margin-top: 2rem;
+}
+
+/* shop content */
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-box:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: .4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.add-cart:hover {
+    background: hsl(240, 32%, 21%);
+}
+
+
+/* ------------------------------ */
+
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+    color: var(--text-color)
+}
+
+footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    background: #f3f0f0;
+    text-align: center;
+    box-shadow: 0 -4px 4px rgb(0 0 0 / 30%);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+    color: var(--text-color);
+    text-decoration: underline;
+
+}
+
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+.profile__social-link {
+    font-size: 1.25rem;
+    color: black;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.footer__copy {
+    display: block;
+    margin: 2.5rem 0 2rem;
+    text-align: center;
+    font-size: small;
+    color: gray
+}
+
+/* --------------about--------------- */
+
+.acontainer {
+    position: relative;
+    text-align: center;
+}
+
+.about,h1{
+    text-shadow: 2px 2px 5px rgb(182, 63, 182) ;
+}
+
+.aheading {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.pdiv {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-shadow: 2px 2px 5px rgb(182, 63, 182);
+    width: 50%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+
+.img {
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.1;
+}
+
+.social{
+    margin-top: 2rem;
+}
+
+
+
+
+
+/* --------breakpoint */
+
+@media screen and (max-width: 576px) {
+    .shop-content {
+        row-gap: 1rem;
+        margin: 2rem;
+    }
+
+
+}

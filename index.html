@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuljai</title>
+
+    <!-- ------------css ----------------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ------------box icons------------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <img src="4.png" alt="" class="logo">
+            <li class="left">
+                <a href="#">Home</a>
+                <a href="about.html">About us</a>
+                <a href="#footer">Contact</a>
+            </li>
+            <!-- ---cart icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- ------cart----- -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- cart content -->
+                <div class="cart-content">
+
+                </div>
+
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+
+                <!-- buy button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+
+                <!-- cart close -->
+                <i class='bx bx-x' id="close-cart"></i>
+
+            </div>
+        </div>
+    </header>
+
+    <!----------- shop------ -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+
+        <!----shop content---- -->
+        <div class="shop-content">
+            <!-- box 1 -->
+            <div class="product-box">
+                <img src="img1.jpg" alt="pic" class="product-img">
+                <h2 class="product-title">Small Dish</h2>
+                <span class="price">25₹</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- box 2 -->
+            <div class="product-box">
+                <img src="img2.jpg" alt="pic" class="product-img">
+                <h2 class="product-title">Large dish</h2>
+                <span class="price">100₹</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- box 3 -->
+            <div class="product-box">
+                <img src="img5.jpeg" alt="pic" class="product-img">
+                <h2 class="product-title">Drone</h2>
+                <span class="price">125₹</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- box 4 -->
+            <div class="product-box">
+                <img src="img4.jpg" alt="pic" class="product-img">
+                <h2 class="product-title">M_Dish</h2>
+                <span class="price">15₹</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- box 5 -->
+            <div class="product-box">
+                <img src="img3.jpg" alt="pic" class="product-img">
+                <h2 class="product-title">New Dish</h2>
+                <span class="price">50₹</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------footer----------------------------------- -->
+
+    <footer class="section footer-classic context-dark bg-image" id="footer">
+        <!-- <div class="container"> -->
+
+        <div class="col-md-4">
+            <dl class="contact-list">
+                <h5>Address
+                    <i class="ri-map-pin-line"></i>
+                </h5>
+                <dd>At post-Dighashi,Tel-Bhiwandi,Dist-Thane Maharashtra 421302</dd>
+            </dl>
+            <hr>
+            <dl class="contact-list">
+                <dt>
+                    <h5>Email
+                        <i class='bx bx-envelope'></i>
+                    </h5>
+                    
+                </dt>
+                <span>
+                    <a href="mailto:#">patilanish052@gmail.com</a>
+                </span>
+            </dl>
+            <div class="contact-list">
+                <span>
+                 <h5>Call Us</h5>   
+                    <i class='bx bx-phone'></i>
+                </span> 
+                
+                <dd><a href="tel:#">+91-7977232924</a> <span>or</span> <a href="tel:#">+91-9356704092</a>
+                </dd>
+            </div>
+
+            <div>
+                <h5>Chat</h5>
+                <a href="https://wa.me/9356704092" target="_blank" class="profile__social-link">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <!-- Rights-->
+                    <p class="rights"><span>© </span><span class="copyright-year">2020</span><span>
+                        </span><span>Tuljai Company</span><span> - </span><span>All Rights Reserved.</span></p>
+                </div>
+            </div>
+            
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
